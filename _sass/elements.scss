@@ -1,0 +1,62 @@
+html {
+	background: #2b2b40;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+}
+
+a {
+	color: #4182e4;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	width: 100%;
+}
+
+h1 strong, h2 strong {
+	font-weight: 700;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 2.3em;
+	padding: 0 0 30px 0;
+}
+h1.editable{
+	font-size: 30px;
+}
+h2 {
+	font-weight: 300;
+	font-size: 1.5em;
+}
+h2.Publicação{
+	font-size: 1.5em;
+}
+h2.premios{
+	font-weight: 300;
+	font-size: 1.1em;
+}
+
+h3 {
+	margin: 20px 0 10px 0;
+}
+
+p, address {
+	font-size: 1.1em;
+	color: #3c3c3c;
+	margin-bottom: 20px;
+	font-weight: 300;
+	line-height: 1.4em;
+	text-align: justify;
+}

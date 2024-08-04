@@ -1,0 +1,17 @@
+- links:
+  - name: Somos
+    link: /
+  - name: Pessoal
+    link: /about/
+  - name: Projetos
+    link: /pricing/
+  - name: Infraestrutura
+    link: /blog/
+  - name: Premiações
+    link: /contact/
+
+- links:
+  - name: LinkedIn
+    link: https://www.linkedin.com/company/grei-ufc/mycompany/
+    new_window: true
+    social_icon: LinkedIn

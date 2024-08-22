@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: Hydra Template
+title: 
 url: "https://proud-alligator.cloudvent.net"
 baseurl:
 google_analytics_key:
@@ -16,7 +16,7 @@ author:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Hydra Template
+  name: 
   links:
     - https://github.com/CloudCannon/hydra-jekyll-template
 

@@ -1,5 +1,5 @@
 .button a, input[type=submit] {
-	color: #fff;
+	color: goldenrod;
 	text-decoration: none;
 	padding: 10px 30px;
 	background: $brand-color;
@@ -9,7 +9,7 @@
 }
 
 .button a:hover, input[type=submit]:hover {
-	border: 1px solid #fff;
+	border: 1px solid goldenrod;
 	background: $secondary-brand-color;
 	cursor: pointer;
 }

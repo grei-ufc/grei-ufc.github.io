@@ -33,7 +33,7 @@ nav {
 		margin: 0 3px;
 		padding: 20px 10px;
 		border-bottom: 1px solid rgba(255,255,255,0);
-		color: rgba(255,255,255,.8);
+		color: goldenrod;
 		transition: .2s ease-in-out;
 		display: none;
 
@@ -64,7 +64,7 @@ nav {
 	a:hover {
 
 		border-bottom: 1px solid rgba(255,255,255,.3);
-		color: #fff;
+		color: goldenrod;
 	}
 
 	@media #{$mid-point} {
@@ -80,7 +80,7 @@ nav {
 	}
 
 	a.active {
-		color: #fff;
+		color: goldenrod;
 	}
 
 }

@@ -70,11 +70,11 @@ footer {
 	padding: 50px 0 50px 0;
 	font-size: 1.1em;
 	position: relative;
-	background: #023813;
+	background: #2b2b40;
 	color: #fff;
 
 	.copyright {
-		color: goldenrod;
+		color: #999;
 		font-size: .7em;
 		margin: 0 auto;
 		
@@ -87,13 +87,13 @@ footer {
 	
 	&,
 	a {
-		color: goldenrod;
+		color: #999;
 	}
 
 	h2 {
 		font-size: 1.4em;
 		margin: 30px 0;
-		color: goldenrod;
+		color: #ccc;
 	}
 
 	.footer-columns {

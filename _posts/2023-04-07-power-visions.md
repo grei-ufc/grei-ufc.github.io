@@ -48,6 +48,6 @@ NILSSON, James W.; RIEDEL, Susan A. Circuitos Elétricos. 8. ed. Rio de Janeiro:
 
 ## Seção 6 – Pesquisadores envolvidos no projeto
 
-Francisco Edinardo Araújo Vasconcelos - [Lattes](http://lattes.cnpq.br/8807139438765241)
+Francisco Edinardo Araújo Vasconcelos 
 
-João Pedro da Silva Teixeira - [Lattes](http://lattes.cnpq.br/1218783106447217)
+João Pedro da Silva Teixeira 

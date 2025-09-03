@@ -1,39 +1,125 @@
 ---
-title: Premiações
-description:
+title: 
+description: 
 ---
-<div class="text-container">
-	<section>
-		<div class="container flex">
-			<div class="text editable">
-				<h2 class="premios"><strong>Prêmio OSE 2023 de melhor projeto geral (CINASE FORTALEZA)</strong></h2>
-				<p>Linha de pesquisa: Laboratório de Subestação em Realidade Virtual aplicada ao ensino de Engenharia Elétrica.</p>
-			</div>
-			<div class="image">
-				<img src="/images/loc/cinase2023_1.jpg" alt="Screenshot" class="screenshotEditable-1" />
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="container flex">
-			<div class="text editable">
-				<h2 class="premios"><strong>Prêmio melhor P&D 2023 (CINASE FORTALEZA)</strong></h2>
-				<p>Linha de pesquisa: Laboratório de Subestação em Realidade Virtual aplicada ao ensino de Engenharia Elétrica.</p>
-			</div>
-			<div class="image">
-				<img src="/images/loc/cinase2023_2.jpg" alt="Screenshot" class="screenshotEditable-1" />
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="container flex">
-			<div class="text editable">
-				<h2 class="premios"><strong>Prêmio OSE 2018 de melhor projeto geral (CINASE FORTALEZA)</strong></h2>
-				<p>Linha de pesquisa: Projeto, desenvolvimento e implementação de microrrede CA em campus universitário com tecnologia solar fotovoltáica.</p>
-			</div>
-			<div class="image">
-				<img src="/images/loc/cinase2018_1.jpg" alt="Screenshot" class="screenshotEditable-1" />
-			</div>
-		</div>
-	</section>
+
+<style>
+/* Estilos para página de premiações */
+.blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.blog-posts {
+  margin-top: 40px;
+}
+
+.blog-post {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #7f8c8d;
+  font-size: 0.9em;
+}
+
+.post-meta time {
+  margin-right: 20px;
+}
+
+.post-category {
+  background: #007024;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+.blog-post h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+.blog-post h2 a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.blog-post h2 a:hover {
+  color: #007024;
+  text-decoration: underline;
+}
+
+.post-excerpt {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  display: inline-block;
+  color: #007024;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.no-news {
+  text-align: center;
+  padding: 40px;
+  color: #7f8c8d;
+  font-style: italic;
+}
+</style>
+
+<div class="blog-container">
+  <h1>Notícias</h1>
+  
+  <div class="blog-posts">
+    {% assign sorted_news = site.news | sort: "date" | reverse %}
+    
+    {% if sorted_news.size > 0 %}
+      {% for item in sorted_news %}
+      <article class="blog-post">
+        <div class="post-meta">
+          <time datetime="{{ item.date | date: '%Y-%m-%d' }}">
+            {{ item.date | date: "%d/%m/%Y" }}
+          </time>
+          {% if item.category %}
+          <span class="post-category">{{ item.category }}</span>
+          {% endif %}
+        </div>
+        
+        <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+        
+        <div class="post-excerpt">
+          {{ item.excerpt | default: item.content | strip_html | truncatewords: 35 }}
+        </div>
+        
+        <a href="{{ item.url }}" class="read-more">Saiba Mais →</a>
+      </article>
+      {% endfor %}
+    {% else %}
+      <div class="no-news">
+        <p>Nenhuma notícia disponível no momento.</p>
+      </div>
+    {% endif %}
+  </div>
 </div>

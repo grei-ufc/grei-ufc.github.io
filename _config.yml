@@ -33,12 +33,29 @@ paginate: 10
 paginate_path: "/blog/:num/"
 permalink: pretty
 
+collections:
+  staff_members:
+    _hide_content: true
+    output: true  # Adicione esta linha
+    permalink: /equipe/:path/  # Recomendado
+  news:
+    output: true
+    permalink: /news/:path/
+
 defaults:
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+      _options:
+        content:
+          width: 1500
+          height: 2500
+  - scope:
+      path: "_news"      # Aplica aos arquivos em _news
+    values:
+      layout: "post"     # ou outro layout
       _options:
         content:
           width: 1500
